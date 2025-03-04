@@ -6,11 +6,11 @@ Set any of the options in this section from 'false' to 'true' in order to enable
 {% set chrome_right_margin_fix = false %}					{# Fixes a potential issue where the right side of receipts are cut off in Chrome #}
 {% set firefox_margin_fix = false %}							{# Fixes issue with margins cutting off when printing on a letter printer on a Mac #}
 
-{% set itemized_hours_labor = false %}						{# Shows time spent on Labor item if time spent is present in the charge #}
+{% set itemized_hours_labor = true %}						{# Shows time spent on Labor item if time spent is present in the charge #}
 {% set per_line_subtotal = false %}								{# Displays Subtotals for each Sale Line (ex. 1 x $5.00) #}
-{% set employee_name_on_labor_charges = false %}	{# Display Employee name on Labor Charges #}
-{% set make_work_order_number_small = false %}		{# Makes work order number inline with the header #}
-{% set remove_logo = false %}											{# Removes logo from receipt #}
+{% set employee_name_on_labor_charges = true %}	{# Display Employee name on Labor Charges #}
+{% set make_work_order_number_small = true %}		{# Makes work order number inline with the header #}
+{% set remove_logo = true %}											{# Removes logo from receipt #}
 
 {% set tag_header_information = false %}					{# Shows shop header information on Tags #}
 {% set notes_on_tag_only = false %}								{# Displays notes on tags only (these will still show up in the Sales screen when ringing out the Work Order) #}
