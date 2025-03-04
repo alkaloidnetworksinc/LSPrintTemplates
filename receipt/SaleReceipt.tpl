@@ -15,7 +15,7 @@
 {% set hide_shop_registration_number = false %}     {# Hide the Shop Registration Number on Sales #}
 {% set hide_customer_vat_number = false %}          {# Hide the Customer VAT Number on Sales #}
 {% set hide_customer_registration_number = false %} {# Hide the Customer Registration Number on Sales #}
-{% set sale_id_instead_of_ticket_number = false %}  {# Displays the Sale ID instead of the Ticket Number #}
+{% set sale_id_instead_of_ticket_number = true %}  {# Displays the Sale ID instead of the Ticket Number #}
 {% set invoice_as_title = parameters.invoice_as_title == "true" ? true : false %} {# If print_layout is true, "Invoice" will be displayed instead of "Sales Receipt" on A4/Letter/Email formats #}
 {% set workorders_as_title = false %}               {# Changes the receipt title to "Work Orders" if there is no Salesline items and 1 or more workorders #}
 {% set quote_id_prefix = "" %}                      {# Adds a string of text as a prefix for the Quote ID. Ex: "Q-". To be used when "sale_id_instead_of_ticket_number" is true #}
@@ -26,7 +26,7 @@
 {# Item Lines #}
 {% set per_line_discount = false %}                 {# Displays Discounts on each Sale Line #}
 {% set per_line_subtotal = false %}                 {# Displays Subtotals for each Sale Line (ex: "1 x 5.00") #}
-{% set discounted_line_items = false %}             {# Strikes out the original price and displays the discounted price on each Sale Line #}
+{% set discounted_line_items = true %}             {# Strikes out the original price and displays the discounted price on each Sale Line #}
 {% set per_line_employee = false %}                 {# Display Employee for each Sale line #}
 {% set show_custom_sku = false %}                   {# Adds SKU column for Custom SKU, if available, on each Sale Line #}
 {% set show_manufacturer_sku = false %}             {# Adds SKU column for Manufacturer SKU, if available, on each Sale Line #}
@@ -56,7 +56,7 @@
 {% set show_credit_account_signature = false %}     {# Prints Store Copy with signature line on accounts that use an Account Credit (not Deposit) #}
 {% set show_customer_layaways = true %}             {# Displays Customer Layaway information at the bottom of receipts #}
 {% set show_customer_specialorders = true %}        {# Displays Customer Special Order information at the bottom of receipts #}
-{% set show_customer_workorders = true %}           {# Displays Customer Work Order information at the bottom of receipts #}
+{% set show_customer_workorders = false %}           {# Displays Customer Work Order information at the bottom of receipts #}
 {% set show_customer_credit_account = true %}       {# Displays Customer Credit Account information at the bottom of receipts #}
 
 {# Logos #}
